@@ -1,0 +1,25 @@
+# VM state: disk overlay, EFI vars, per-VM SSH key, known_hosts, cloud-init seed,
+# pid/log/sockets (all created by create.sh / start.sh / tunnel.sh)
+/state/
+# downloaded Ubuntu cloud image and its checksum list
+/images/
+
+# in case anything lands elsewhere
+*.qcow2
+*.img
+*.iso
+*.fd
+*.raw
+*.vmdk
+*.pid
+*.log
+*.sock
+id_ed25519*
+id_rsa*
+known_hosts
+seed/
+.env
+.env.*
+*invite*
+*token*
+.DS_Store
